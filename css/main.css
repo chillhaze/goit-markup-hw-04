@@ -1,0 +1,157 @@
+/* -----Welcome styles----- */
+.welcome {
+  text-align: center;
+
+  background-color: var(--bg-color-dark);
+
+  padding: 200px 0;
+}
+
+.welcome-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--font-color-white);
+}
+
+.order-btn {
+  display: inline-block;
+  padding: 15px 32px;
+  margin: 30px 0 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--font-color-white);
+  background-color: var(--accent-color);
+
+  box-shadow: 0px 4px 4px var(--btn-boxshadow-color);
+  border-radius: 4px;
+}
+
+/* -----Advantages styles----- */
+
+/* ------ Правка 4 - паддинги должны быть 94рх и задать их секции.  */
+/* ------ Готово.   */
+.advantages {
+  padding: 94px 0;
+}
+
+.advantages-list {
+  display: flex;
+}
+
+/* ------ Правка 5 - вместо этого свойства отрегулируйте отступы между ли с помощью марджинов.  */
+/* ------ Готово.   */
+.advantages-item {
+  max-width: 270px;
+}
+
+.advantages-item:not(:first-child) {
+  margin-left: var(--item-set-gap);
+}
+
+.advantages-item-title {
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  text-align: left;
+}
+
+.advantages-item-text {
+  margin-top: 10px;
+
+  color: var(--font-color-secondary);
+}
+
+/* -----Visuals styles----- */
+.visuals {
+  padding-bottom: 94px;
+}
+
+.visuals-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+
+  text-align: center;
+}
+
+.visuals-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: calc(-1 * var(--item-set-gap));
+}
+
+.visuals-item {
+  flex-basis: calc(100% / 3 - var(--item-set-gap));
+  margin-left: var(--item-set-gap);
+}
+
+/* -----Team styles----- */
+.team {
+  background-color: var(--bg-color-secondary);
+
+  padding: 94px 0;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+
+  text-align: center;
+}
+
+/* ------ Правка 5 - вместо этого свойства отрегулируйте отступы между ли с помощью марджинов.  */
+/* ------ Готово.   */
+.team-list {
+  margin-top: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--item-set-gap));
+}
+
+/* ------ Правка 7 - задайте элементам ширину, не полагайтесь лишь на размер изображения.  */
+/* ------ Готово.   */
+.team-mate {
+  flex-basis: calc(100% / 4 - var(--item-set-gap));
+  margin-left: var(--item-set-gap);
+  max-width: 270px;
+
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.18;
+
+  background-color: var(--bg-color-main);
+
+  box-shadow: var(--team-mate-box-shadow);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* ------ Правка 8 - оберните в див, которому задайте паддинги со всех сторон.  */
+/* ------ Готово.   */
+/* ------ не совсем понятно какой падинг задавать слева и справа ------???????*/
+.team-mate-text {
+  padding: 30px;
+}
+
+.team-mate-name {
+  font-weight: 500;
+}
+
+.team-mate-position {
+  margin-top: 10px;
+  color: var(--font-color-secondary);
+}
