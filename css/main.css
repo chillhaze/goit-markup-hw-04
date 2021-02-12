@@ -59,7 +59,19 @@
   margin-left: var(--item-set-gap);
 }
 
+.advantages-item-head {
+  padding: 25px 0;
+
+  background-color: var(--bg-color-secondary);
+}
+
+.advantages-item-img {
+  margin: 0 auto;
+}
+
 .advantages-item-title {
+  margin-top: 30px;
+
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
@@ -113,8 +125,6 @@
   text-align: center;
 }
 
-/* ------ Правка 5 - вместо этого свойства отрегулируйте отступы между ли с помощью марджинов.  */
-/* ------ Готово.   */
 .team-list {
   margin-top: 50px;
 
@@ -123,8 +133,6 @@
   margin-left: calc(-1 * var(--item-set-gap));
 }
 
-/* ------ Правка 7 - задайте элементам ширину, не полагайтесь лишь на размер изображения.  */
-/* ------ Готово.   */
 .team-mate {
   flex-basis: calc(100% / 4 - var(--item-set-gap));
   margin-left: var(--item-set-gap);
@@ -140,9 +148,6 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-/* ------ Правка 8 - оберните в див, которому задайте паддинги со всех сторон.  */
-/* ------ Готово.   */
-/* ------ не совсем понятно какой падинг задавать слева и справа ------???????*/
 .team-mate-text {
   padding: 30px;
 }
@@ -154,4 +159,65 @@
 .team-mate-position {
   margin-top: 10px;
   color: var(--font-color-secondary);
+}
+
+/* -----Social styles----- */
+
+.social {
+  padding-top: 16px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  flex-basis: calc(100% / 2 - 10px);
+}
+
+.social-item:not(:first-child) {
+  margin-left: 10px;
+}
+.social-link-icon {
+  border: 1px solid var(--accent-color);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* -----Clients styles----- */
+
+.clients {
+  padding: 94px 0;
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+
+  text-align: center;
+}
+
+.clients-list {
+  margin-top: 50px;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+
+  flex-basis: calc(100% / 6 - 30px);
+}
+
+.clients-item {
+  /* display: inline-block; */
+}
+
+.clients-item:not(:first-child) {
+  margin-left: 30px;
+}
+.clients-link {
+  display: inline-block;
+  padding: 19px 65px;
+  border: 1px solid var(--border-color);
+}
+
+.clients-link img {
+  height: 30px;
 }
