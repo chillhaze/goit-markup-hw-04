@@ -1,10 +1,22 @@
 /* -----Welcome styles----- */
 .welcome {
+  padding: 200px 0;
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 600px;
+
   text-align: center;
 
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/welcome-img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: var(--bg-color-dark);
-
-  padding: 200px 0;
 }
 
 .welcome-title {
@@ -19,7 +31,7 @@
 }
 
 .order-btn {
-  display: inline-block;
+  display: inline-flex;
   padding: 15px 32px;
   margin: 30px 0 0;
 
@@ -39,8 +51,6 @@
 
 /* -----Advantages styles----- */
 
-/* ------ Правка 4 - паддинги должны быть 94рх и задать их секции.  */
-/* ------ Готово.   */
 .advantages {
   padding: 94px 0;
 }
@@ -49,24 +59,17 @@
   display: flex;
 }
 
-/* ------ Правка 5 - вместо этого свойства отрегулируйте отступы между ли с помощью марджинов.  */
-/* ------ Готово.   */
 .advantages-item {
   max-width: 270px;
 }
 
+.advantages-item::before {
+  content: '';
+  height: 120px;
+}
+
 .advantages-item:not(:first-child) {
   margin-left: var(--item-set-gap);
-}
-
-.advantages-item-head {
-  padding: 25px 0;
-
-  background-color: var(--bg-color-secondary);
-}
-
-.advantages-item-img {
-  margin: 0 auto;
 }
 
 .advantages-item-title {
@@ -83,6 +86,14 @@
   margin-top: 10px;
 
   color: var(--font-color-secondary);
+}
+
+.thumb {
+  padding: 25px 0;
+
+  text-align: center;
+
+  background-color: var(--bg-color-secondary);
 }
 
 /* -----Visuals styles----- */
@@ -144,8 +155,8 @@
 
   background-color: var(--bg-color-main);
 
-  box-shadow: var(--team-mate-box-shadow);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--team-mate-box-shadow);
 }
 
 .team-mate-text {
@@ -161,28 +172,7 @@
   color: var(--font-color-secondary);
 }
 
-/* -----Social styles----- */
-
-.social {
-  padding-top: 16px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-
-  flex-basis: calc(100% / 2 - 10px);
-}
-
-.social-item:not(:first-child) {
-  margin-left: 10px;
-}
-.social-link-icon {
-  border: 1px solid var(--accent-color);
-  border-radius: 50%;
-  overflow: hidden;
-}
-
 /* -----Clients styles----- */
-
 .clients {
   padding: 94px 0;
 }
@@ -199,25 +189,30 @@
   margin-top: 50px;
 
   display: flex;
-  flex-flow: row;
-  justify-content: center;
-
-  flex-basis: calc(100% / 6 - 30px);
-}
-
-.clients-item {
-  /* display: inline-block; */
 }
 
 .clients-item:not(:first-child) {
   margin-left: 30px;
+  fill: currentColor;
 }
-.clients-link {
-  display: inline-block;
-  padding: 19px 65px;
+
+.clients-item .social-link {
+  width: 170px;
+  height: 90px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--border-color);
 }
 
-.clients-link img {
-  height: 30px;
+.clients-item:focus,
+.clients-item:hover {
+  outline: 1px solid var(--accent-color);
+
+  /* border: none; */
+}
+
+.clients-item:focus .social-icon,
+.clients-item:hover .social-icon {
+  fill: var(--accent-color);
 }

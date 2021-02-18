@@ -42,13 +42,21 @@
         </nav>
         <ul class="header-contacts">
           <li class="contacts-item">
-            <a href="mailto:info@devstudio.com" class="mail">
+            <a href="mailto:info@devstudio.com" class="link mail">
+              <svg class="contacts-icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-envelope" />
+              </svg>
               info@devstudio.com
             </a>
           </li>
 
           <li class="contacts-item">
-            <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link tel">
+              <svg class="contacts-icon" width="10" height="16">
+                <use href="./images/sprite.svg#icon-smartphone" />
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -228,14 +236,54 @@
     <!-- Footer -->
     <footer class="page-footer">
       <div class="container">
-        <a class="logo logo-footer" href="./index.html">
-          <span class="logo-accent">Web</span>Studio
-        </a>
-        <address class="footer-address">
-          г. Киев, пр-т Леси Украинки, 26
-          <a href="mailto:info@example.com" class="mail"> info@example.com </a>
-          <a href="tel:+380991111111" class="tel"> +38 099 111 11 11 </a>
-        </address>
+        <div class="footer-content">
+          <a class="logo logo-footer" href="./index.html">
+            <span class="logo-accent">Web</span>Studio
+          </a>
+          <address class="footer-address">
+            г. Киев, пр-т Леси Украинки, 26
+            <a href="mailto:info@example.com" class="link mail">
+              info@example.com
+            </a>
+            <a href="tel:+380991111111" class="link tel"> +38 099 111 11 11 </a>
+          </address>
+        </div>
+        <div class="footer-social">
+          <h2 class="social-title">Присоединяйтесь</h2>
+          <ul class="social">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-instagram" />
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-facebook" />
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-linkedin" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

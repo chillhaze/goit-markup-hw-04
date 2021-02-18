@@ -26,8 +26,6 @@ p {
   margin-block-end: 0;
 }
 
-/* ------ Правка 6 - тегуimg задайте свойство display: block.  */
-/* ------ Готово.   */
 img {
   display: block;
   max-width: 100%;
@@ -45,9 +43,12 @@ img {
   --font-color-black: #000;
   --accent-color: #2196f3;
   --border-color: #ececec;
+  --social-link-color: #afb1b8;
   --btn-boxshadow-color: rgba(0, 0, 0, 0.15);
   --team-mate-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --card-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --transparent-links: rgba(255, 255, 255, 0.6);
   --item-set-gap: 30px;
 }
@@ -107,16 +108,12 @@ body {
   border-bottom: 1px solid var(--border-color);
 }
 
-/* ------ Правка 1 - в этом диве нет необходимсти, не перегружайте разметку */
-/* ------ Удалил лишний div. Сделал, как показывал Репета на уроке.   */
 .page-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* ------ Правка 2 - Ссылкам в хедере задайте вертикальные паддинги, чтобы увеличить активную область.  */
-/* ------ Задал.   */
 .page-header a {
   padding: 32px 0;
 }
@@ -137,8 +134,6 @@ body {
   margin-left: 93px;
 }
 
-/* ------ Правка 3 - правильным решением будет обнулить у первого ли левый марджин, и увеличить левый марджин списка.  */
-/* ------ Готово.   */
 .nav-item:not(:first-child) {
   margin-left: 50px;
 }
@@ -149,8 +144,13 @@ body {
   display: flex;
 }
 
+.header-contacts .link {
+  display: flex;
+  align-items: center;
+}
+
 .contacts-item:nth-child(2) {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .link:hover,
@@ -158,21 +158,52 @@ body {
   color: var(--accent-color);
 }
 
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .link.current {
   color: var(--accent-color);
 }
 
-.contacts-item .mail:hover,
-.contacts-item .mail:focus,
-.contacts-item .tel:hover,
-.contacts-item .tel:focus {
-  color: var(--accent-color);
+/* -----Social styles----- */
+.social {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.social-item:hover,
+.social-item:focus {
+  background-color: var(--accent-color);
+}
+
+.social-icon {
+  fill: var(--social-link-color);
+}
+
+.social-item:hover .social-icon,
+.social-icon:focus .social-icon {
+  fill: var(--bg-color-main);
 }
 
 /* -----Footer styles----- */
 .page-footer {
   padding: 60px 0;
   background-color: var(--bg-color-dark);
+}
+
+.page-footer .container {
+  display: flex;
 }
 
 .footer-address {
@@ -188,16 +219,35 @@ body {
   color: var(--font-color-white);
 }
 
-.footer-address .mail,
-.footer-address .tel {
+.footer-address .link {
   margin-top: 9px;
 
   color: var(--transparent-links);
 }
 
-.footer-address .mail:hover,
-.footer-address .mail:focus,
-.footer-address .tel:hover,
-.footer-address .tel:focus {
+.footer-address .link:hover,
+.footer-address .link:focus {
   color: var(--accent-color);
+}
+
+.footer-social {
+  padding-top: 12px;
+  margin-left: 70px;
+}
+
+.social-title {
+  font-weight: 500;
+  line-height: 1.172;
+  text-transform: uppercase;
+
+  color: var(--font-color-white);
+}
+
+footer .social-item {
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer .social-icon {
+  fill: var(--bg-color-main);
 }

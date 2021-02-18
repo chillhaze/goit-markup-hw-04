@@ -40,8 +40,6 @@
   justify-content: center;
 }
 
-/* ------ Правка 8 - отступы между ли необходимо реализовать через марджины.  */
-/* ------ Готово.   */
 .filter-item {
   margin: 0 4px;
 }
@@ -53,8 +51,6 @@
 
 /* ----Projects list---- */
 
-/* ------ Правка 5 - вместо этого свойства отрегулируйте отступы между ли с помощью марджинов.  */
-/* ------ Готово.   */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -62,8 +58,6 @@
   margin-left: calc(-1 * var(--item-set-gap));
 }
 
-/* ------ Правка 7 - задайте элементам ширину, не полагайтесь лишь на размер изображения.  */
-/* ------ Готово.   */
 .portfolio-item {
   margin-bottom: 30px;
   max-width: 370px;
@@ -75,6 +69,11 @@
 
 .portfolio-item.last-item {
   margin-bottom: 0;
+}
+
+.portfolio-item:focus,
+.portfolio-item:hover {
+  box-shadow: var(--card-box-shadow);
 }
 
 .text-wrapper {
@@ -93,8 +92,6 @@
   color: var(--font-color-main);
 }
 
-/* ------ Правка 9 - согласно макету между этими элементами есть небольшой отступ  */
-/* ------ Готово.   */
 .portfolio-item-subtitle {
   margin-top: 4px;
 
