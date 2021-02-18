@@ -193,26 +193,32 @@
 
 .clients-item:not(:first-child) {
   margin-left: 30px;
-  fill: currentColor;
 }
 
-.clients-item .social-link {
+.clients-list .clients-link {
   width: 170px;
   height: 90px;
-  display: inline-flex;
+
+  display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--border-color);
+
+  border: 1px solid var(--social-link-color);
+  border-radius: 4px;
 }
 
-.clients-item:focus,
-.clients-item:hover {
-  outline: 1px solid var(--accent-color);
-
-  /* border: none; */
+.clients-icon {
+  fill: var(--social-link-color);
 }
 
-.clients-item:focus .social-icon,
-.clients-item:hover .social-icon {
+.clients-link:focus,
+.clients-link:hover {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  fill: var(--accent-color);
+}
+
+.clients-link:focus .clients-icon,
+.clients-link:hover .clients-icon {
   fill: var(--accent-color);
 }

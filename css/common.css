@@ -192,7 +192,7 @@ body {
 }
 
 .social-item:hover .social-icon,
-.social-icon:focus .social-icon {
+.social-item:focus .social-icon {
   fill: var(--bg-color-main);
 }
 
@@ -209,7 +209,7 @@ body {
 .footer-address {
   display: flex;
   flex-direction: column;
-  margin-top: 15px;
+  margin-top: 20px;
 
   font-style: normal;
   font-weight: 400;
@@ -241,6 +241,10 @@ body {
   text-transform: uppercase;
 
   color: var(--font-color-white);
+}
+
+.social {
+  margin-top: 20px;
 }
 
 footer .social-item {
