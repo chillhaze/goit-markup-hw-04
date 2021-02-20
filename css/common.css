@@ -58,7 +58,6 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--font-color-main);
   background-color: var(--bg-color-main);
@@ -174,12 +173,31 @@ body {
   justify-content: space-around;
 }
 
+/* ----- Правка 2 ----- */
+/* Ментор - вместо паддингов центрируйте иконки флексами */
+/* Иконки центрировал флексами */
+
 .social-item {
+  display: flex;
+  justify-content: center;
+
+  /* padding: 12px 0; */
+  /* align-items: center; */
+
+  border-radius: 50%;
+}
+
+/* ----- Правка 3 ----- */
+/* Ментор - в данном случае размеры уместно задавать ссылке, а не ли  */
+/* ----Исправил------ */
+
+.social-link {
   width: 44px;
   height: 44px;
-  padding: 12px;
-  border-radius: 50%;
-  background-color: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-item:hover,
@@ -202,8 +220,14 @@ body {
   background-color: var(--bg-color-dark);
 }
 
+/* ----- Правка 5 ----- */
+/* Ментор - дописать  */
+/* ----Исправил------ */
+/* Добавил свойство align-items: baseline */
+
 .page-footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-address {
@@ -230,6 +254,11 @@ body {
   color: var(--accent-color);
 }
 
+/* ----- Правка 6 ----- */
+/* Ментор - скриншот  */
+/* ----Исправил------ */
+/* Добавил свойство align-items: baseline - удалил padding: 12px;  */
+
 .footer-social {
   padding-top: 12px;
   margin-left: 70px;
@@ -255,3 +284,9 @@ footer .social-item {
 footer .social-icon {
   fill: var(--bg-color-main);
 }
+
+/* .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */

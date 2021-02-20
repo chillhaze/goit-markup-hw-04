@@ -71,8 +71,16 @@
   margin-bottom: 0;
 }
 
-.portfolio-item:focus,
-.portfolio-item:hover {
+/* ----- Правка 7 ----- */
+/* Ментор - состояние ховера/фокуса сттилизируйте не для ли, а для ссылочки  */
+/* ----Исправил------ */
+
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:focus,
+.portfolio-link:hover {
   box-shadow: var(--card-box-shadow);
 }
 
