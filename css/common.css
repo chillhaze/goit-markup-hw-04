@@ -260,7 +260,6 @@ body {
 /* Добавил свойство align-items: baseline - удалил padding: 12px;  */
 
 .footer-social {
-  padding-top: 12px;
   margin-left: 70px;
 }
 

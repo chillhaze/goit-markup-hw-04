@@ -96,10 +96,11 @@
 /* Иконки центрировал флексами, но падинг оставил для полного размера элемента (как в макете) + добавил бордер радиус 4px - не сразу увидел на макете*/
 
 .thumb {
-  padding: 25px 0;
+  height: 120px;
 
   display: flex;
   justify-content: center;
+  align-items: center;
 
   border-radius: 4px;
 
